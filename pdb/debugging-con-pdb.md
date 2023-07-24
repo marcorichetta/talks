@@ -1,11 +1,14 @@
 ---
 theme: night
 highlightTheme: "base16/dracula"
-enableMenu: true
+enableMenu: false
 controlsTutorial: false
 transition: slide
-logoImg: "qwe.webp"
+logoImg: "meli.jpg"
 title: "Debugging con Pdb"
+exportHTMLPath: ../export
+width: 1920
+height: 1080
 ---
 
 # Pdb
@@ -29,10 +32,6 @@ un IDLE, una terminal hasta utilizándolo mediante la GUI de VSCode. También ve
     -   Poetry
     -   and beyond ?)
 
-:::
-
-::: right
-<img alt="Foto de perfil" loading="lazy" style="border-radius: 999px;" src="pycamp.jpg">
 :::
 
 :::
@@ -66,9 +65,30 @@ note: Documentaron en 1945 el primer bug atrapado en una computadora (literal)
 
 ![ENIAC](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Eniac.jpg/1005px-Eniac.jpg)
 
+<figcaption>ENIAC, una de las primeras computadoras de propósito general</figcaption>
+
 --
 
 <!-- .slide: data-background-iframe="https://www.youtube.com/embed/tpIctyqH29Q" -->
+
+---
+
+## Python Debugger
+
+::: {.grid style="--cols-xl: 2;"}
+
+-   Introducido en 1992 [2 años después de Python](https://github.com/python/cpython/commit/921c82401b6053ae7dacad5ef9a4bd02bdf8dbf1#diff-98d47941a1bfadcfdfe02973122c83be2940ca6f3b1c32ca8898e7f594d2669d)
+
+-   Parar tu programa en un punto determinado
+-   Inspeccionar variables, source code, ejecutar expresiones
+
+![PDB birth](pdb.png)
+
+:::
+
+---
+
+## Demo time 🔥
 
 ---
 
