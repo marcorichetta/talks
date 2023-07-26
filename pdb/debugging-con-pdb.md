@@ -9,6 +9,7 @@ title: "Debugging con Pdb"
 exportHTMLPath: ../export
 width: 1200
 height: 900
+totalTime: 1200
 ---
 
 # Pdb
@@ -17,24 +18,24 @@ height: 900
 
 ---
 
+<!-- .slide: data-timing=60 -->
+
 ## Dr Who?
 
 -   Córdoba 🇦🇷
--   Code Eco - https://furydocs.io/code-eco/1.3.17/guide/
--   Trabajando en mejorar la DX de Python
-    -   Python
-    -   Poetry
-    -   and beyond ?)
+-   Trabajando en mejorar la DX de Python @ Code Eco
+-   https://furydocs.io/code-eco/1.3.17/guide/
 
 ---
+
+<!-- .slide: data-timing=45 -->
 
 ## Agenda
 
 1. Debugging, why?
-2. pdb
-3. Demo 🔥
-4. Recap
-5. Recursos extra
+1. pdb
+1. Demo 🔥
+1. Recursos extra
 
 note: primero un poco de historia,
 despues vemos las features de pdb y
@@ -121,13 +122,24 @@ import pdb; pdb.set_trace()
 PYTHONBREAKPOINT=0 python demo.py
 ```
 
-#### Pero trata de no dejarlos 🚧
+#### Pero trata de no dejarlos en producción 🚧
 
 `debug-statements` pre-commit hook
 
 -   Chequea debugger statements en tu código
 
--   [Pystack](https://github.com/bloomberg/pystack) - Inspeccionar procesos de Python en ejecución o Python core dumps para entender qué están haciendo
+--
+
+## Recursos
+
+-   [ipdb](https://github.com/gotcha/ipdb)
+-   [pdb++](https://github.com/pdbpp/pdbpp)
+-   [Pystack](https://github.com/bloomberg/pystack)
+
+note:
+
+-   pdb con esteroides
+-   Inspeccionar procesos de Python en ejecución o core dumps para entender que se ejecuta/ó
 
 ---
 
