@@ -32,16 +32,14 @@ totalTime: 1200
 
 ## Agenda
 
-1. Debugging, why?
+1. Debugging? Con qué se come?
 1. pdb
 1. Demo 🔥
 1. Recursos extra
 
-note: primero un poco de historia,
-despues vemos las features de pdb y
-por ultimo una demo de como usar esto localmente, con apps web o hasta en un lab
-En esta charla veremos qué es `pdb`, qué funcionalidades nos brinda y como usarlo en nuestro día a día, tanto desde
-un IDLE, una terminal hasta utilizándolo mediante la GUI de VSCode. También veremos como usarlo en nuestros tests
+note: Una intro al debugging
+despues pasamos pdb y sus funcionalidades
+por ultimo una demo de como usarlo en scripts, con apps web y en notebooks de Jupyter
 
 ---
 
@@ -76,6 +74,10 @@ ENIAC, una de las primeras computadoras de propósito general
 
 ## Python Debugger
 
+![giphy](http://i.giphy.com/FoH28ucxZFJZu.gif)
+
+--
+
 ![PDB birth](pdb.png)
 
 Introducido en 1992 ([2 años después de Python](https://github.com/python/cpython/commit/921c82401b6053ae7dacad5ef9a4bd02bdf8dbf1#diff-98d47941a1bfadcfdfe02973122c83be2940ca6f3b1c32ca8898e7f594d2669d))
@@ -90,6 +92,10 @@ Introducido en 1992 ([2 años después de Python](https://github.com/python/cpyt
     -   Explorar el código
 
 ```python
+
+# Shell
+python -m pdb script.py
+
 # Python +3.7
 breakpoint()
 
@@ -101,7 +107,7 @@ import pdb; pdb.set_trace()
 
 ### Comandos más comunes
 
--   `p variable` - inspecciona una variable
+-   `p(rint)` - inspecciona una variable
 -   `l(ist)` - Muestra el código del archivo
 -   `c(ontinue)` - Continúa la ejecución hasta el próximo breakpoint
 -   `n(ext)` - Continúa la ejecución hasta la siguiente línea
@@ -126,7 +132,7 @@ PYTHONBREAKPOINT=0 python demo.py
 
 `debug-statements` pre-commit hook
 
--   Chequea debugger statements en tu código
+-   Chequea pdb statements en tu código
 
 --
 
@@ -156,3 +162,7 @@ Cheatsheet
 
 ![PDB cheatsheet](cheatsheet.png)
 https://www.nnja.io/2019/python-debugging-cheatsheet.pdf
+
+---
+
+![@giphy](https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif)
