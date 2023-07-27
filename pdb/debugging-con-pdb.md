@@ -12,19 +12,25 @@ height: 900
 totalTime: 1200
 ---
 
-# Pdb
+# Pdb {style="color: #fff"}
 
-<small>o como encontrar errores sin print()</small>
+<!-- .slide: data-timing=30 data-background="bug.jpg" -->
+
+<small>o como encontrar errores sin print()\*</small>
+
+note: Photo by Skyler Ewing: https://www.pexels.com/photo/harmonia-axyridis-ladybug-on-green-leaf-6313159/
 
 ---
 
-<!-- .slide: data-timing=60 -->
+<!-- .slide: data-timing=30 -->
 
-## Dr Who?
+## Who?
 
+-   Marco Richetta
 -   Córdoba 🇦🇷
--   Trabajando en mejorar la DX de Python @ Code Eco
--   https://furydocs.io/code-eco/1.3.17/guide/
+-   Software Engineer @ Code Eco (https://furydocs.io/code-eco/1.3.17/guide/)
+
+note: Soy de Cordoba, por si no se nota la tonada. Trabajo en Code Eco entre otras cosas en mejorar la DX de Python
 
 ---
 
@@ -32,21 +38,23 @@ totalTime: 1200
 
 ## Agenda
 
-1. Debugging? Con qué se come?
+1. Debugging
 1. pdb
 1. Demo 🔥
 1. Recursos extra
 
-note: Una intro al debugging
-despues pasamos pdb y sus funcionalidades
-por ultimo una demo de como usarlo en scripts, con apps web y en notebooks de Jupyter
+note:
+Una intro al debugging <br/>
+despues pasamos pdb y sus funcionalidades <br/>
+una demo de como usarlo en scripts, notebooks de Jupyter (lo que se usa en labs) <br/>
+por último tips y algunos recursos extra
 
 ---
 
 ### Por qué hablamos de _"Debugging"_?
 
 note: Qué tiene que ver un insecto con un error de computación?
-En parte se lo debemos a Grace Hopper y su equipo.
+En parte se lo debemos a una polilla.
 
 --
 
@@ -58,7 +66,7 @@ En parte se lo debemos a Grace Hopper y su equipo.
 
 _Bug_ capturado en la Harvard Mark II, Septiembre 1947
 
-note: Documentaron en 1947 el primer bug (literal) atrapado en una computadora
+note: El primer bug (literal) documentado que rompió un programa
 
 --
 
@@ -66,73 +74,99 @@ note: Documentaron en 1947 el primer bug (literal) atrapado en una computadora
 
 ENIAC, una de las primeras computadoras de propósito general
 
+note: Computadoras del tamaño de habitaciones, con componentes electromecánicos
+
 --
 
 <!-- .slide: data-background-iframe="https://www.youtube.com/embed/tpIctyqH29Q" -->
+
+note: Si les interesa conocer datos como este u otros aprovecho a recomendarles este curso
+sobre la historia de la computación
 
 ---
 
 ## Python Debugger
 
-![giphy](http://i.giphy.com/FoH28ucxZFJZu.gif)
-
---
-
 ![PDB birth](pdb.png)
 
 Introducido en 1992 ([2 años después de Python](https://github.com/python/cpython/commit/921c82401b6053ae7dacad5ef9a4bd02bdf8dbf1#diff-98d47941a1bfadcfdfe02973122c83be2940ca6f3b1c32ca8898e7f594d2669d))
 
+note: No es algo nuevo, ya tiene la mayoría de edad
+
 --
 
-### Funcionalidades
+#### Controlar la ejecución de tu programa
 
--   Controlar la ejecución de tu programa
-    -   Inspeccionar variables
-    -   Ejecutar expresiones
-    -   Explorar el código
+-   Inspeccionar variables
+-   Ejecutar expresiones
+-   Explorar el código
 
 ```python
-
 # Shell
 python -m pdb script.py
 
 # Python +3.7
 breakpoint()
 
-# O
+# Retrocompatible
 import pdb; pdb.set_trace()
 ```
+
+note: Esta funcionalidad aplica a cualquier debugger, no solo al de Python. **IMPORTANTE**
 
 --
 
 ### Comandos más comunes
 
--   `p(rint)` - inspecciona una variable
--   `l(ist)` - Muestra el código del archivo
--   `c(ontinue)` - Continúa la ejecución hasta el próximo breakpoint
--   `n(ext)` - Continúa la ejecución hasta la siguiente línea
--   `s(tep)` - Más granular que `n`
--   `h(elp)` - Muestra los comandos disponibles
+-   `p (rint)` - inspeccionar una variable
+-   `l (ist)` - mostrar el código del programa
+-   `c (ontinue)` - continuar la ejecución del programa
+-   `n (ext)` - cotinuar la ejecución hasta la siguiente línea
+-   `j (ump)` - setea la próxima linea a ser ejecutada
+-   `h (elp)` - mostrar comandos disponibles y docs
+
+note: 5/6 minutos
 
 ---
+
+<!-- .slide: data-timing=540 -->
 
 ## Demo time 🔥
 
+note:
+python -m pdb <br/>
+demo.py <br/>
+pip install ipdb <br/>
+notebook <br/>
+UI
+
 ---
 
-## Tricks
+## Tips
 
-#### Podes deshabilitar los breakpoints en tu código
+#### Podes deshabilitar los breakpoint
 
 ```python
 PYTHONBREAKPOINT=0 python demo.py
 ```
 
-#### Pero trata de no dejarlos en producción 🚧
+<br>
 
-`debug-statements` pre-commit hook
+#### Pero si te olvidas... 🚧 {class="fragment"}
 
--   Chequea pdb statements en tu código
+pre-commit hook: [`debug-statements`](https://pre-commit.com/hooks.html) {class="fragment"}
+
+note: Chequea pdb statements en tu código
+
+--
+
+#### Pytest ❤️ Pdb (_`ipdb` compliant_)
+
+```python
+pytest --pdb
+```
+
+<small>Docs: https://docs.pytest.org/en/latest/how-to/failures.html#using-python-library-pdb-with-pytest</small>
 
 --
 
@@ -140,21 +174,12 @@ PYTHONBREAKPOINT=0 python demo.py
 
 -   [ipdb](https://github.com/gotcha/ipdb)
 -   [pdb++](https://github.com/pdbpp/pdbpp)
+-   [VSCode debugging](https://code.visualstudio.com/docs/python/debugging)
+-   [Pycharm debugging](https://www.jetbrains.com/help/pycharm/debugging-your-first-python-application.html)
 -   [Pystack](https://github.com/bloomberg/pystack)
 
-note:
-
--   pdb con esteroides
--   Inspeccionar procesos de Python en ejecución o core dumps para entender que se ejecuta/ó
-
----
-
-## Recap
-
--   Debugging
--   Como usar pdb
--   Comandos más comunes
--   pdb, ipdb, vscode, tests + pdb
+note: pdb con esteroides
+Inspeccionar procesos de Python en ejecución o core dumps para entender que se ejecuta/ó
 
 --
 
