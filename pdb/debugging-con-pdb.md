@@ -4,15 +4,13 @@ highlightTheme: "base16/dracula"
 enableMenu: false
 controlsTutorial: false
 transition: slide
-logoImg: "meli.jpg"
 title: "Debugging con Pdb"
-exportHTMLPath: ../export
 width: 1200
 height: 900
 totalTime: 1200
 ---
 
-# Pdb {style="color: #fff"}
+# Pdb
 
 <!-- .slide: data-timing=30 data-background="bug.jpg" -->
 
@@ -28,7 +26,7 @@ note: Photo by Skyler Ewing: https://www.pexels.com/photo/harmonia-axyridis-lady
 
 -   Marco Richetta
 -   Córdoba 🇦🇷
--   Software Engineer @ Code Eco (https://furydocs.io/code-eco/1.3.17/guide/)
+-   Python DX @ Mercado Libre
 
 note: Soy de Cordoba, por si no se nota la tonada. Trabajo en Code Eco entre otras cosas en mejorar la DX de Python
 
@@ -38,7 +36,6 @@ note: Soy de Cordoba, por si no se nota la tonada. Trabajo en Code Eco entre otr
 
 ## Agenda
 
-1. Debugging
 1. pdb
 1. Demo 🔥
 1. Recursos extra
@@ -46,14 +43,14 @@ note: Soy de Cordoba, por si no se nota la tonada. Trabajo en Code Eco entre otr
 note:
 Una intro al debugging <br/>
 despues pasamos pdb y sus funcionalidades <br/>
-una demo de como usarlo en scripts, notebooks de Jupyter (lo que se usa en labs) <br/>
+una demo de como usarlo en scripts, notebooks de Jupyter (lo que usamos en labs) <br/>
 por último tips y algunos recursos extra
 
 ---
 
 ### Por qué hablamos de _"Debugging"_?
 
-note: Qué tiene que ver un insecto con un error de computación?
+note: Qué tiene que ver un bug o insecto con un error de computación?
 En parte se lo debemos a una polilla.
 
 --
@@ -78,7 +75,9 @@ note: Computadoras del tamaño de habitaciones, con componentes electromecánico
 
 --
 
-<!-- .slide: data-background-iframe="https://www.youtube.com/embed/tpIctyqH29Q" -->
+<!-- .slide: data-background="crashcourse.jpg" -->
+
+<!-- <iframe class="stretch" data-src="https://www.youtube.com/embed/tpIctyqH29Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 note: Si les interesa conocer datos como este u otros aprovecho a recomendarles este curso
 sobre la historia de la computación
