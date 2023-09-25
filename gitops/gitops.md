@@ -3,6 +3,8 @@ theme: robot-lung-ebi
 highlightTheme: "base16/dracula"
 controls: false
 controlsTutorial: false
+enableMenu: false
+progress: false
 transition: fade
 logoImg: "nerd-logo.png"
 title: "Intro a GitOps con Flux"
@@ -96,7 +98,7 @@ Git para creamos, modificamos y eliminamos nuestros recursos.
 
 ---
 
-## Timeline
+### Timeline
 
 ![timeline](gitops-timeline.png)
 
@@ -128,8 +130,8 @@ Se crea OpenGitOps para acelerar la adopción<br>
 ![Push Based deploy](push-deploy.png)
 
 -   Approach tradicional (GH Actions, Gitlab CI, Jenkins)
--   Deployment Pipeline contiene credenciales
--   No deteca desvíos entre el Environment Repo vs Environment
+-   Deployment Pipeline contiene credenciales (⚠️ God mode ⚠️)
+-   No detecta desvíos entre el Environment Repo vs Environment
 
 --
 
@@ -140,9 +142,51 @@ Se crea OpenGitOps para acelerar la adopción<br>
 -   _Deployment Pipeline_ => _Operator_
 -   Encargado de observar y comparar continuamente el **estado deseado** vs el **estado actual**
 
+-   Permisos sync con k8s (RBAC)
+
 -   Además monitorea el _Image Registry_ para encontrar nuevas versiones de imágenes
 
--   También se puede sincronizar manualmente 🙌
-
 note:
-Cuando el `Environment` cambie de cualquier manera que no esté descrita en nuestro `Environment Repository`, **estos cambios serán revertidos**. <br> Asegura que **todos los cambios en nuestro `Environment` deben pasar por git**
+Cuando el `Environment` cambie de cualquier manera que no esté descrita en nuestro `Environment Repository`, **estos cambios serán revertidos**. <br>
+Asegura que **todos los cambios en nuestro `Environment` deben pasar por git** <br>
+También se puede sincronizar manualmente 🙌
+
+---
+
+<img src="flux.png" style="border:none">
+
+<i>Flux is a set of continuous and progressive delivery solutions for Kubernetes</i>
+
+--
+
+## Features
+
+::: .container
+
+**Git push y Flux se encarga del resto** {.fragment}
+
+::: left
+
+**Flux 🤝 Herramientas conocidas** {.fragment}
+
+<ul class=fragment>
+<li><b>Git providers</b>: Github, Gitlab, Bitbucket, hasta S3!</li>
+<li><b>Container registries</b></li>
+<li><b>K8s tools</b>: Kustomize, Helm, RBAC</li>
+</ul>
+
+:::
+
+::: right
+
+**Monitoreo** {.fragment}
+
+<ul class=fragment>
+<li><b>Health checks</b></li>
+<li><b>Alertas</b>: Grafana, Datadog</li>
+<li><b>Notificaciones</b>: Github, Slack, Discord</li>
+</ul>
+
+:::
+
+:::
