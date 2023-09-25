@@ -190,3 +190,21 @@ También se puede sincronizar manualmente 🙌
 :::
 
 :::
+
+--
+
+## Controllers
+
+En Kubernetes, los Controllers ejecutan _control loops_ que observan el **estado del cluster** y solicitan o ejecutan cambios según se necesite, con el objetivo de llegar al **estado deseado.**
+
+![Flux controllers](controllers.png)
+
+note:
+Source: Sincroniza los sources (Git, Bucket, S3) y los guarda como artefactos para ser utilizados por otros ctrls.<br>
+Kustomize: Genera, valida y aplica los manifiestos en el cluster.<br>
+Helm: Manejo de Helm Releases y Charts.<br>
+Notification:<br>
+Notifica a nuestro sistema de eventos externos (Github, Gitlab, Docker)<br>
+Notifica a sistemas externos (Slack, Discord, Teams) de nuestros eventos<br>
+Image Reflector: Escanea repos de imagenes (Docker, OCI) y guarda la image metadata para ser usada por el **Automation Controller** 👇<br>
+Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están disponibles. ⇒ **Kustomize Controller** nota el cambio y empieza a sincronizar<br>
