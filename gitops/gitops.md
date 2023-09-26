@@ -63,7 +63,7 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 
 -   Usas `kubectl apply` desde tu compu o CI
 -   Querés automatizar deploys de apps/infra
--   Buscas una alternativa/complemento a Terraform (Crossplane FTW)
+-   Buscas una alternativa/complemento a Terraform
 -   **Nerds**, obvio
 
 ---
@@ -191,6 +191,8 @@ También se puede sincronizar manualmente 🙌
 
 :::
 
+## ![Flux Diagram](flux-diagram.png)
+
 --
 
 ## Controllers
@@ -208,3 +210,7 @@ Notifica a nuestro sistema de eventos externos (Github, Gitlab, Docker)<br>
 Notifica a sistemas externos (Slack, Discord, Teams) de nuestros eventos<br>
 Image Reflector: Escanea repos de imagenes (Docker, OCI) y guarda la image metadata para ser usada por el **Automation Controller** 👇<br>
 Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están disponibles. ⇒ **Kustomize Controller** nota el cambio y empieza a sincronizar<br>
+
+---
+
+<!-- .slide: data-background-image="https://media.makeameme.org/created/aaaaand-demo-time.jpg" -->
