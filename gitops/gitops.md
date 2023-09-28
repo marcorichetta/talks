@@ -1,19 +1,21 @@
 ---
+title: "Intro a GitOps con Flux"
+author: Marco Richetta
 theme: robot-lung-ebi
+customTheme: "css/override"
 highlightTheme: "base16/dracula"
 controls: false
 controlsTutorial: false
 enableMenu: false
 progress: false
-transition: fade
+transition: slide
 logoImg: "nerd-logo.png"
-title: "Intro a GitOps con Flux"
 width: 1440
 height: 900
 totalTime: 1200
 ---
 
-<!-- .slide: data-timing=30 data-background="https://github.com/sysarmy/2023.nerdear.la/blob/main/app/static/img/hero-background.jpeg?raw=true" data-background-transition="zoom" -->
+<!-- .slide: data-background="https://github.com/sysarmy/2023.nerdear.la/blob/main/app/static/img/hero-background.jpeg?raw=true" data-background-transition="zoom" -->
 
 # Intro a GitOps con Flux {style=color:white;font-style:italic}
 
@@ -26,15 +28,32 @@ Nerdearla 2023
 
 ---
 
-<!-- .slide: data-timing=30 data-background-transition="zoom" -->
+<!-- .slide: data-timing=90 data-background-transition="zoom" -->
 
 ## About me
 
+::: .container
+
+::: left
+
 -   Las Perdices, Córdoba 🇦🇷
--   Python DX @ Mercado Libre
--   @marcorichetta
+-   Aprendiendo de software desde 2016
+-   Haciendo cosas @ Mercado Libre
+-   [marcorichetta.dev](https://www.marcorichetta.dev/)
+
+:::
+
+::: right
+
+![Lola](lola.jpg){height=600, style="border:0"}
+
+:::
+
+:::
 
 ---
+
+<!-- .slide: data-timing=60 -->
 
 ## Agenda
 
@@ -50,6 +69,8 @@ Seguido de eso les voy a contar sobre Flux, un set de herramientas para implemen
 Finalmente haremos una demo para ver su funcionamiento paso a paso.
 
 ---
+
+<!-- .slide: data-timing=120 -->
 
 ## Objetivo
 
@@ -68,13 +89,15 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 
 ---
 
+<!-- .slide: data-timing=180 -->
+
 # YA\*Ops
 
 (Yet Another \*Ops)
 
 --
 
-<img src="ops-fever.png" height=800>
+![ops fever](ops-fever.png){height=900}
 
 note: No nos dejemos llevar por _the new kid on the block_.
 Para mí, lo valioso de estas metodologías es la variedad.
@@ -83,9 +106,11 @@ Al final todo termina siendo `ClickOps`
 
 --
 
-<img src="clickops.png" height=300>
+![clickops](clickops.png){height=300}
 
 ---
+
+<!-- .slide: data-timing=45 -->
 
 # GitOps
 
@@ -93,14 +118,17 @@ Al final todo termina siendo `ClickOps`
 
 note:
 Es un modelo de trabajo basado en Git como **source of truth.** <br>
-Mix entre DevOps e IaC <br>
-Git para creamos, modificamos y eliminamos nuestros recursos.
+Git no solo para código de apps<br>
+sino también para crear, modificar y eliminar recursos.<br>
+Es una forma de implementar IaC
 
 ---
 
 ### Timeline
 
-![timeline](gitops-timeline.png)
+<!-- .slide: data-timing=180 -->
+
+![timeline](gitops-timeline.png){width=1200}
 
 note:
 2017 - _GitOps_ es acuñado por primera vez por Alexis Richardson<br>
@@ -114,6 +142,12 @@ También se crea ArgoCD<br>
 2021 - 1st GitOpsCon<br>
 Se crea OpenGitOps para acelerar la adopción<br>
 2022 - Flux y ArgoCD se graduan
+
+--
+
+![Flux General availability](flux-ga.png)
+
+note: 10 MINUTOS
 
 ---
 
@@ -153,9 +187,9 @@ También se puede sincronizar manualmente 🙌
 
 ---
 
-<img src="flux.png" style="border:none">
+![flux-logo](flux.png){width=1200, style="border:none";}
 
-<i>Flux is a set of continuous and progressive delivery solutions for Kubernetes</i>
+> Flux is a set of continuous and progressive delivery solutions for Kubernetes
 
 --
 
@@ -163,25 +197,29 @@ También se puede sincronizar manualmente 🙌
 
 ::: .container
 
-**Git push y Flux se encarga del resto** {.fragment}
-
 ::: left
 
-**Flux 🤝 Herramientas conocidas** {.fragment}
+**Git push y Flux se encarga del resto**
 
-<ul class=fragment>
+:::
+
+::: middle
+
+**Flux 🤝 Tools**
+
+<ul>
 <li><b>Git providers</b>: Github, Gitlab, Bitbucket, hasta S3!</li>
 <li><b>Container registries</b></li>
-<li><b>K8s tools</b>: Kustomize, Helm, RBAC</li>
+<li><b>K8s:</b>: Kustomize, Helm, RBAC</li>
 </ul>
 
 :::
 
 ::: right
 
-**Monitoreo** {.fragment}
+**Monitoreo**
 
-<ul class=fragment>
+<ul>
 <li><b>Health checks</b></li>
 <li><b>Alertas</b>: Grafana, Datadog</li>
 <li><b>Notificaciones</b>: Github, Slack, Discord</li>
@@ -191,8 +229,6 @@ También se puede sincronizar manualmente 🙌
 
 :::
 
-## ![Flux Diagram](flux-diagram.png)
-
 --
 
 ## Controllers
@@ -200,6 +236,12 @@ También se puede sincronizar manualmente 🙌
 En Kubernetes, los Controllers ejecutan _control loops_ que observan el **estado del cluster** y solicitan o ejecutan cambios según se necesite, con el objetivo de llegar al **estado deseado.**
 
 ![Flux controllers](controllers.png)
+
+note: Ej: termostato
+
+--
+
+## ![Flux Diagram](flux-diagram.png)
 
 note:
 Source: Sincroniza los sources (Git, Bucket, S3) y los guarda como artefactos para ser utilizados por otros ctrls.<br>
