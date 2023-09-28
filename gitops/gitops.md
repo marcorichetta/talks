@@ -151,7 +151,7 @@ note: 10 MINUTOS
 
 ---
 
-<!-- .slide: data-background-image="principles.png" data-background-size=1400px -->
+![principles](principles.png){width=2600px}
 
 ---
 
@@ -255,4 +255,13 @@ Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están
 
 ---
 
-<!-- .slide: data-background-image="https://media.makeameme.org/created/aaaaand-demo-time.jpg" -->
+<!-- .slide: data-background="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW41Y3Q0M3k1NjN5YWl2bDNvc2Jxam8wN2VsNTY0ODhjanNnNTdzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/99RUx0EF2fmCsFmiLj/giphy.gif" data-background-size=800px -->
+
+--
+
+### Si quieren seguirme...
+
+![QR repo](qr.svg){width=500, style=border:0}
+
+---
+
