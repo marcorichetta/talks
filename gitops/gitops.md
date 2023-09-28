@@ -153,37 +153,16 @@ note: 10 MINUTOS
 
 ![principles](principles.png){width=2600px}
 
----
-
-# Push vs Pull Based Deployments
-
---
-
-## Push
-
-![Push Based deploy](push-deploy.png)
-
--   Approach tradicional (GH Actions, Gitlab CI, Jenkins)
--   Deployment Pipeline contiene credenciales (⚠️ God mode ⚠️)
--   No detecta desvíos entre el Environment Repo vs Environment
-
---
-
-## Pull
-
-![Pull Based Deploy](pull-deploy.png)
-
--   _Deployment Pipeline_ => _Operator_
--   Encargado de observar y comparar continuamente el **estado deseado** vs el **estado actual**
-
--   Permisos sync con k8s (RBAC)
-
--   Además monitorea el _Image Registry_ para encontrar nuevas versiones de imágenes
-
 note:
-Cuando el `Environment` cambie de cualquier manera que no esté descrita en nuestro `Environment Repository`, **estos cambios serán revertidos**. <br>
-Asegura que **todos los cambios en nuestro `Environment` deben pasar por git** <br>
-También se puede sincronizar manualmente 🙌
+1.Definís tu sistema en archivos → Reproducibilidad<br> (Bootstrap nuevos recursos con _copy & paste)_
+Sabes qué es lo que está desplegado<br>
+2.Los beneficios de Git aplicados a cualquier recurso<br>
+(PRs flows, Static checkers)<br>
+Auditabilidad - Todos los cambios son observables, verificables y auditables<br>
+3.Como el estado declarado se almacena en Git, se pueden automatizar todos los cambios que a implementarse a través de un PR.<br>
+Rollback? se puede revertir un PR y listo.
+<br>
+4.El sistema es **monitoreado** constantemente y cuenta con **self-healing** en caso de cualquier cambio o fallo. Se busca asegurar que lo que deployamos coincide con lo declarado en el repositorio.
 
 ---
 
@@ -241,7 +220,9 @@ note: Ej: termostato
 
 --
 
-## ![Flux Diagram](flux-diagram.png)
+### Arquitectura
+
+![Flux Diagram](flux-diagram.png){width=1200}
 
 note:
 Source: Sincroniza los sources (Git, Bucket, S3) y los guarda como artefactos para ser utilizados por otros ctrls.<br>
@@ -252,6 +233,38 @@ Notifica a nuestro sistema de eventos externos (Github, Gitlab, Docker)<br>
 Notifica a sistemas externos (Slack, Discord, Teams) de nuestros eventos<br>
 Image Reflector: Escanea repos de imagenes (Docker, OCI) y guarda la image metadata para ser usada por el **Automation Controller** 👇<br>
 Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están disponibles. ⇒ **Kustomize Controller** nota el cambio y empieza a sincronizar<br>
+
+--
+
+# Push vs Pull Based Deployments
+
+--
+
+## Push
+
+![Push Based deploy](push-deploy.png)
+
+-   Approach tradicional (GH Actions, Gitlab CI, Jenkins)
+-   Deployment Pipeline contiene credenciales (⚠️ God mode ⚠️)
+-   No detecta desvíos entre el Environment Repo vs Environment
+
+--
+
+## Pull
+
+![Pull Based Deploy](pull-deploy.png)
+
+-   _Deployment Pipeline_ => _Operator_
+-   Encargado de observar y comparar continuamente el **estado deseado** vs el **estado actual**
+
+-   Permisos sync con k8s (RBAC)
+
+-   Además monitorea el _Image Registry_ para encontrar nuevas versiones de imágenes
+
+note:
+Cuando el `Environment` cambie de cualquier manera que no esté descrita en nuestro `Environment Repository`, **estos cambios serán revertidos**. <br>
+Asegura que **todos los cambios en nuestro `Environment` deben pasar por git** <br>
+También se puede sincronizar manualmente 🙌
 
 ---
 
@@ -265,3 +278,13 @@ Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están
 
 ---
 
+# Recap
+
+#### GitOps
+
+-   Git como Source of Truth
+-
+
+#### Flux
+
+Una forma de hacer GitOps en K8s
