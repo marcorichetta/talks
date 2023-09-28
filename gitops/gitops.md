@@ -120,6 +120,10 @@ Para mí, lo valioso de estas metodologías es la variedad.
 Al igual que con nuevas tecnologías, tenemos que saber adaptarlas a nuestro uso.
 Al final todo termina siendo `ClickOps`
 
+--
+
+![Alt text](tweet.jpg) {.r-stretch}
+
 ---
 
 <!-- .slide: data-timing=45 -->
@@ -132,7 +136,9 @@ note:
 Es un modelo de trabajo basado en Git como **source of truth.** <br>
 Git no solo para código de apps<br>
 sino también para crear, modificar y eliminar recursos.<br>
-Es una forma de implementar IaC
+Es una forma de implementar Infra as Data
+
+--
 
 ---
 
