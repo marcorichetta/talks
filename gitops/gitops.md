@@ -87,6 +87,20 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 -   Buscas una alternativa/complemento a Terraform
 -   **Nerds**, obvio
 
+--
+
+::: container
+::: left
+![Alt text](image.png)
+:::
+::: middle
+![Alt text](image-1.png)
+:::
+
+:::
+
+![Alt text](image-2.png){width=600}
+
 ---
 
 <!-- .slide: data-timing=180 -->
@@ -98,15 +112,13 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 --
 
 ![ops fever](ops-fever.png){height=900}
+![clickops](clickops.png){height=300}{.fragment}
+{.r-stack}
 
 note: No nos dejemos llevar por _the new kid on the block_.
 Para mí, lo valioso de estas metodologías es la variedad.
 Al igual que con nuevas tecnologías, tenemos que saber adaptarlas a nuestro uso.
 Al final todo termina siendo `ClickOps`
-
---
-
-![clickops](clickops.png){height=300}
 
 ---
 
@@ -288,3 +300,21 @@ También se puede sincronizar manualmente 🙌
 #### Flux
 
 Una forma de hacer GitOps en K8s
+
+--
+
+## Ecosistema
+
+::: container
+
+::: left
+
+![ecosistema](ecosistema.png)
+:::
+
+::: rigth
+![Flux extensions](extensions.png)
+
+:::
+
+:::
