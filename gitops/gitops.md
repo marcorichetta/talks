@@ -123,6 +123,8 @@ Al final todo termina siendo `ClickOps`
 
 --
 
+## _Automate as much as reasonable_
+
 ![Alt text](tweet.jpg) {.r-stretch}
 
 ---
@@ -241,7 +243,7 @@ note: Ej: termostato
 
 ### Arquitectura
 
-![Flux Diagram](flux-diagram.png){width=1200}
+![Flux Diagram](flux-diagram.png){width=1100}
 
 note:
 Source: Sincroniza los sources (Git, Bucket, S3) y los guarda como artefactos para ser utilizados por otros ctrls.<br>
@@ -249,7 +251,15 @@ Kustomize: Genera, valida y aplica los manifiestos en el cluster.<br>
 Helm: Manejo de Helm Releases y Charts.<br>
 Notification:<br>
 Notifica a nuestro sistema de eventos externos (Github, Gitlab, Docker)<br>
-Notifica a sistemas externos (Slack, Discord, Teams) de nuestros eventos<br>
+Notifica a sistemas externos (Slack, Discord, Teams) de nuestros eventos
+
+--
+
+## Image Update automation
+
+![Image automation](image-automation.png){width=1400}
+
+note:
 Image Reflector: Escanea repos de imagenes (Docker, OCI) y guarda la image metadata para ser usada por el **Automation Controller** 👇<br>
 Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están disponibles. ⇒ **Kustomize Controller** nota el cambio y empieza a sincronizar<br>
 
@@ -287,11 +297,11 @@ También se puede sincronizar manualmente 🙌
 
 ---
 
-<!-- .slide: data-background="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW41Y3Q0M3k1NjN5YWl2bDNvc2Jxam8wN2VsNTY0ODhjanNnNTdzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/99RUx0EF2fmCsFmiLj/giphy.gif" data-background-size=800px -->
+<!-- .slide: data-background="kun.gif" data-background-size=1200px -->
 
 --
 
-### Si quieren seguirme...
+### Come with me!
 
 ![QR repo](qr.svg){width=500, style=border:0}
 
