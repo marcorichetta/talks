@@ -9,7 +9,7 @@ controlsTutorial: false
 enableMenu: false
 progress: false
 transition: slide
-logoImg: "nerd-logo.png"
+logoImg: "images/nerd-logo.png"
 width: 1440
 height: 900
 totalTime: 1200
@@ -46,7 +46,7 @@ Nerdearla 2023
 
 ::: right
 
-![Lola](lola.jpg){height=600, style="border:0"}
+![Lola](images/lola.jpg){height=600, style="border:0"}
 
 :::
 
@@ -92,15 +92,15 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 
 ::: container
 ::: left
-![Alt text](image.png)
+![Alt text](images/image.png)
 :::
 ::: middle
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 :::
 
 :::
 
-![Alt text](image-2.png){width=600}
+![Alt text](images/image-2.png){width=600}
 
 ---
 
@@ -112,8 +112,8 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 
 --
 
-![ops fever](ops-fever.png){height=900}
-![clickops](clickops.png){height=300}{.fragment}
+![ops fever](images/ops-fever.png){height=900}
+![clickops](images/clickops.png){height=300}{.fragment}
 {.r-stack}
 
 note: No nos dejemos llevar por _the new kid on the block_.
@@ -123,9 +123,9 @@ Al final todo termina siendo `ClickOps`
 
 --
 
-## _Automate as much as reasonable_
+### _Automate as much as reasonable_
 
-![Alt text](tweet.jpg) {.r-stretch}
+![Alt text](images/tweet.jpg) {.r-stretch}
 
 ---
 
@@ -133,7 +133,7 @@ Al final todo termina siendo `ClickOps`
 
 # GitOps
 
-![Flow](flow.png)
+![Flow](images/flow.png)
 
 note:
 Es un modelo de trabajo basado en Git como **source of truth.** <br>
@@ -141,15 +141,13 @@ Git no solo para código de apps<br>
 sino también para crear, modificar y eliminar recursos.<br>
 Es una forma de implementar Infra as Data
 
---
-
 ---
 
 ### Timeline
 
 <!-- .slide: data-timing=180 -->
 
-![timeline](gitops-timeline.png){width=1200}
+![timeline](images/gitops-timeline.png){width=1200}
 
 note:
 2017 - _GitOps_ es acuñado por primera vez por Alexis Richardson<br>
@@ -166,13 +164,13 @@ Se crea OpenGitOps para acelerar la adopción<br>
 
 --
 
-![Flux General availability](flux-ga.png)
+![Flux General availability](images/flux-ga.png)
 
 note: 10 MINUTOS
 
 ---
 
-![principles](principles.png){width=2600px}
+![principles](images/principles.png){width=2600px}
 
 note:
 1.Definís tu sistema en archivos → Reproducibilidad<br> (Bootstrap nuevos recursos con _copy & paste)_
@@ -187,7 +185,7 @@ Rollback? se puede revertir un PR y listo.
 
 ---
 
-![flux-logo](flux.png){width=1200, style="border:none";}
+![flux-logo](images/flux.png){width=1200, style="border:none";}
 
 > Flux is a set of continuous and progressive delivery solutions for Kubernetes
 
@@ -235,7 +233,7 @@ Rollback? se puede revertir un PR y listo.
 
 En Kubernetes, los Controllers ejecutan _control loops_ que observan el **estado del cluster** y solicitan o ejecutan cambios según se necesite, con el objetivo de llegar al **estado deseado.**
 
-![Flux controllers](controllers.png)
+![Flux controllers](images/controllers.png)
 
 note: Ej: termostato
 
@@ -243,7 +241,7 @@ note: Ej: termostato
 
 ### Arquitectura
 
-![Flux Diagram](flux-diagram.png){width=1100}
+![Flux Diagram](images/flux-diagram.png){width=1100}
 
 note:
 Source: Sincroniza los sources (Git, Bucket, S3) y los guarda como artefactos para ser utilizados por otros ctrls.<br>
@@ -257,7 +255,7 @@ Notifica a sistemas externos (Slack, Discord, Teams) de nuestros eventos
 
 ## Image Update automation
 
-![Image automation](image-automation.png){width=1400}
+![Image automation](images/image-automation.png){width=1400}
 
 note:
 Image Reflector: Escanea repos de imagenes (Docker, OCI) y guarda la image metadata para ser usada por el **Automation Controller** 👇<br>
@@ -271,7 +269,7 @@ Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están
 
 ## Push
 
-![Push Based deploy](push-deploy.png)
+![Push Based deploy](images/push-deploy.png)
 
 -   Approach tradicional (GH Actions, Gitlab CI, Jenkins)
 -   Deployment Pipeline contiene credenciales (⚠️ God mode ⚠️)
@@ -281,7 +279,7 @@ Automation: Actualiza archivos YAML (`git commit`) cuando nuevas imagenes están
 
 ## Pull
 
-![Pull Based Deploy](pull-deploy.png)
+![Pull Based Deploy](images/pull-deploy.png)
 
 -   _Deployment Pipeline_ => _Operator_
 -   Encargado de observar y comparar continuamente el **estado deseado** vs el **estado actual**
@@ -297,13 +295,15 @@ También se puede sincronizar manualmente 🙌
 
 ---
 
-<!-- .slide: data-background="kun.gif" data-background-size=1200px -->
+<!-- .slide: data-background="images/kun.gif" -->
 
 --
 
 ### Come with me!
 
-![QR repo](qr.svg){width=500, style=border:0}
+![QR repo](images/qr.svg){width=500, style=border:0}
+
+#### bit.ly/flux-workshop
 
 ---
 
@@ -321,11 +321,11 @@ También se puede sincronizar manualmente 🙌
 
 ::: left
 
-![ecosistema](ecosistema.png)
+![ecosistema](images/ecosistema.png)
 :::
 
 ::: rigth
-![Flux extensions](extensions.png)
+![Flux extensions](images/extensions.png)
 
 :::
 
