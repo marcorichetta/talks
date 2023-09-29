@@ -13,6 +13,7 @@ logoImg: "nerd-logo.png"
 width: 1440
 height: 900
 totalTime: 1200
+exportHTMLPath: ../export
 ---
 
 <!-- .slide: data-background="https://github.com/sysarmy/2023.nerdear.la/blob/main/app/static/img/hero-background.jpeg?raw=true" data-background-transition="zoom" -->
@@ -298,14 +299,9 @@ También se puede sincronizar manualmente 🙌
 
 # Recap
 
-#### GitOps
+### GitOps
 
--   Git como Source of Truth
--
-
-#### Flux
-
-Una forma de hacer GitOps en K8s
+### Flux
 
 --
 
@@ -324,3 +320,11 @@ Una forma de hacer GitOps en K8s
 :::
 
 :::
+
+---
+
+<!-- .slide: data-background-image="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2pkNXpjMjB3bjEyYzA4Zmh1ZW9jaWdhZGtncXZ6cWE4enR6ZThlbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RigvZXMzZAlSc6jQNQ/giphy.gif" -->
+
+---
+
+# Preguntas?
