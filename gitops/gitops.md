@@ -48,6 +48,8 @@ Nerdearla 2023
 
 ![Lola](images/lola.jpg){height=600, style="border:0"}
 
+Lola 🐶
+
 :::
 
 :::
@@ -58,7 +60,6 @@ Nerdearla 2023
 
 ## Agenda
 
-1. Intro
 1. GitOps
 1. Flux
 1. Demo
@@ -75,8 +76,8 @@ Finalmente haremos una demo para ver su funcionamiento paso a paso.
 
 ## Objetivo
 
-1. Que conozcan de que va gitops
-2. Que aprendan sobre flux
+1. Que conozcan sobre otra metodología de trabajo
+2. Que vean como flux nos permite aplicarla
 3. Que lo puedan probar localmente
 
 --
@@ -229,6 +230,25 @@ Rollback? se puede revertir un PR y listo.
 
 --
 
+## Ecosistema
+
+::: .container
+
+::: left
+
+![ecosistema](images/ecosistema.png){width=600}
+
+:::
+
+::: rigth
+![Flux extensions](images/extensions.png){width=1400}
+
+:::
+
+:::
+
+--
+
 ## Controllers
 
 En Kubernetes, los Controllers ejecutan _control loops_ que observan el **estado del cluster** y solicitan o ejecutan cambios según se necesite, con el objetivo de llegar al **estado deseado.**
@@ -307,25 +327,42 @@ También se puede sincronizar manualmente 🙌
 
 ---
 
-# Recap
-
-### GitOps
-
-### Flux
-
---
-
-## Ecosistema
+## Recap
 
 ::: container
 
 ::: left
 
-![ecosistema](images/ecosistema.png)
+#### GitOps
+
+Git como _Source of truth_
+
 :::
 
-::: rigth
-![Flux extensions](images/extensions.png)
+::: right
+
+#### Principios
+
+1. Declarative
+1. Versioned and immutable
+1. Pulled automatically
+1. Continuously reconciled
+
+:::
+
+:::
+
+::: container
+
+::: middle
+
+#### Flux
+
+-   Herramienta para implementar GitOps
+-   Set de controllers (**Source, Kustomize, Helm, Notification, Image Update**)
+-   Pull based deployments
+    -   Diff de nuestro estado deseado y el estado real
+    -   Aplica los cambios necesarios para que se mantengan iguales
 
 :::
 
