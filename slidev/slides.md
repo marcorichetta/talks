@@ -2,7 +2,7 @@
 theme: apple-basic
 transition: fade
 layout: intro-image-right
-image: /assets/enie.png
+image: /enie.png
 highlighter: "shiki"
 lineNumbers: false
 info: |
@@ -14,9 +14,9 @@ fonts:
     # for code font
     mono: "Fira Code"
 
-favicon: /assets/favicon.ico
+favicon: /favicon.ico
 author: Marco Richetta
-record: dev
+record: true
 drawings:
     presenterOnly: true
 
@@ -44,7 +44,7 @@ Thanks to EuroPython organizers and volunteers for their help. It’s my first t
 
 ---
 layout: image-right
-image: /assets/about.webp
+image: /about.webp
 ---
 
 # About Me
@@ -55,9 +55,11 @@ image: /assets/about.webp
 - Living in Copenhagen 🇩🇰
 - Making the world a better place™ with software since ~2016
 - I like to play bass and I'm a dog owner (I miss you so much Lola 🐶)
-
+- Looking for a job right now: https://www.linkedin.com/in/marco-richetta/
 </v-clicks>
 
+---
+layout: center
 ---
 
 # How many of you do not speak English natively? 🖐️
@@ -177,8 +179,8 @@ This is also important because of other reasons:
 
 - **New Python Users**: The tutorials provide a structured path to learn Python.
 - **Educators and Newcomers**: Programming is being taught at an increasingly younger age. Being able to teach Python to young people in their native language is a big plus.
-- **Contributing to Open Source**: It's a great way to get started in open source.
-- **Other Contributors**: I took a lot of inspiration from the 🇵🇹 translation
+- **Contributing to Open Source**: This is not directly on translation, but it's a great way to get started in open source.
+- **Other Contributors**: I took a lot of inspiration from the 🇵🇹 translation to find more apropiate terms
 </v-clicks>
 -->
 
@@ -188,21 +190,25 @@ layout: section
 
 # Our Story: Python-Docs-ES 🇪🇸
 
+<!--
+Let's see how we did it
+-->
+
 ---
 transition: slide-up
 ---
 
 # Back in the day
 
-![Python Docs - Decemeber 2019](./assets/docs-2019.png)
+![Python Docs - Decemeber 2019](/docs-2019.png)
 
 #### <i>Honorable mention to the Wayback Machine</i>
 
 <!--
 - the official docs didn't offer a Spanish option
 - This is a snapshot of it in December 2019.
-- People who didn't have good English had to rely on translation services or community blogs
-- Which are fine most of the time, but not always
+- People who didn't have good English had to rely on translation services or community content
+- Which are fine most of the time, but not always specially for reference material
 -->
 
 ---
@@ -239,6 +245,8 @@ Then Vinicius Ferreira 🇧🇷
 
 Which led to other spanish speakers 
 who were listening to do the same.
+
+#TODO Agregar contenido
 -->
 
 ---
@@ -255,7 +263,7 @@ transition: slide-up
 ---
 
 <div class="flex justify-center">
-  <img src="./assets/collaboration.png" alt="Discourse collaboration" width="800">
+  <img src="/collaboration.png" alt="Discourse collaboration" width="800">
 </div>
 
 <!--
@@ -299,11 +307,14 @@ transition: slide-left
 `https://docs.python.org/es` was a reality! 🚀
 
 <div class="flex justify-center">
-  <img src="./assets/docs-translation.png" alt="First screenshot of the translated docs" width="800">
+  <img src="/docs-translation.png" alt="First screenshot of the translated docs" width="800">
 </div>
 
 <!--
 And a month later
+and a lot of messages on telegram
+
+#TODO Gif cat keyboard
 
 ## We were part of the official docs
 -->
@@ -318,7 +329,11 @@ layout: image
 - **350** files translated (> 75%)
 - **+300** contributors (and counting)
 
-![Opened issues and Pull Requests](/assets/issues-PRs.png)
+![Opened issues and Pull Requests](/issues-PRs.png)
+
+<!--
+Grab it while it's hot!
+-->
 
 ---
 layout: section
@@ -330,30 +345,34 @@ layout: section
 
 # Contributing to Python doesn’t have to be scary!
 
-![](./assets/python-issues-github.png)
+![](/python-issues-github.png)
+
+<!--
+#TODO Escribir lo que quiero decir
+-->
 
 ---
 
-![](./assets/python-docs-contributing.png)
+![](/python-docs-contributing.png)
 
+<!--
+Making this talk I discovered this page.
+
+While it's helpful, it can be daunting for people that want to get started.
+-->
 
 ---
 
 # Our Process
 
 - Fork the main repository
-- Request a file to translate in an issue
+- Request a file to translate
 - Translate it on your computer
 - Commit, push and create the pull request
 - Wait for feedback
 - Success 🎉
 
-::right::
-
-(Show diagram here)
-
-
-
+#TODO Incluir roles
 
 ---
 
@@ -361,11 +380,10 @@ layout: section
 
 
 ## Guide with the required step-by-step configuration:
-`https://python-docs-es.readthedocs.io/es/3.13/CONTRIBUTING.html`
+https://python-docs-es.readthedocs.io/es/3.13/CONTRIBUTING.html
 
 ## Telegram channel:
-`https://t.me/python_docs_es`
-
+https://t.me/python_docs_es
 
 ---
 
@@ -373,12 +391,18 @@ layout: section
 
 https://www.gally.net/temp/llms-and-translation/index.html
 
+
+#TODO Agregar antes una slide que diga EXTRA
+
+Hay un componente en lo artesanal que no queremos perder
+
 <!--
+This shouldn't be a 2025 talk if there's no AI in it
+
 - What role do LLMs play in this? 
 - We cannot ignore that they're pretty useful in translation.
 
 - Professional translators know that AI will get better and better (99%), and that offers for that 1% you can provide will become scarce.
-(Mention Gally.net | AI and Translation)
 -->
 
 ---
@@ -388,19 +412,19 @@ https://www.gally.net/temp/llms-and-translation/index.html
 
 <v-clicks>
 
-- Do it for the **community**
 - It’s not only translation; it's a great opportunity to **learn**
+- It's a way of giving back to the **community**
+- **Get started in Open Source**
 - **Contribute to Python**
 
 </v-clicks>
 
-<!-- 
+<!--
 - Do it for the **community**, you never know the people you get to know when helping others.
 - **Learn**: You will learn about Python and how to work collaboratively.
 - It’s not only translation; it's a great opportunity to get started on **open source**.
 - **Contribute to open source**: It's adding a tiny grain of sand to a collective effort that has been going on for years and will continue beyond us.
-
- -->
+-->
 
 ---
 layout: intro-image
@@ -411,20 +435,31 @@ image: https://live.staticflickr.com/65535/53938930235_3921adef78_3k.jpg
   <h1>Be part of something bigger than you</h1>
 </div>
 
+<!--
+But most importantly,
+
+to be part of something bigger than you
+
+Which will trascend us
+-->
 
 ---
 layout: image-right
-image: /assets/qr_telegram.jpg
+image: /qr_telegram.jpg
 ---
 
 # Join us
 
 ## https://t.me/python_docs_es
 
+<!--
+If you wanna join us or just say hi.
+-->
+
 ---
 layout: intro-image-right
 # image: https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif
-image: /assets/ciao-gif.webp
+image: /ciao-gif.webp
 ---
 
 # Thank You! 🙏
