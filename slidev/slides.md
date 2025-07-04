@@ -134,12 +134,36 @@ layout: section
 - Documentation is crucial for the development and growth of any project.
 - I mean, we work in i18n because of our users.
 - Why not do it for Python itself?
+-->
 
-- If you know English, you're lucky; most of the knowledge is in that language. But what about people who don't? 😢
+---
 
-We had translation services before
-Nowadays it's even easier with LLMs, which I'm gonna mention later in the talk because... 
-## AI
+## Internet users by language - March 2020
+
+<div class="flex justify-center mb-4">
+    <img src="/internet_users_2025.jpg" alt="Internet users by language" width="600">
+    <div class="absolute bottom-5 right-60 text-sm text-gray-500">
+        Source: <a href="https://en.wikipedia.org/wiki/Languages_used_on_the_Internet#Internet_users_by_language">Wikipedia</a>
+    </div>
+</div>
+
+<!--
+- 75% **don't speak English** as their first language
+-->
+
+---
+
+## Top 10 million websites by language content - March 2025
+
+<div class="flex justify-center mb-4">
+    <img src="/language_usage_2025.jpg" alt="Language usage by website" width="550">
+    <div class="absolute bottom-5 right-60 text text-gray-500">
+        Source: <a href="https://en.wikipedia.org/wiki/Languages_used_on_the_Internet#Internet_users_by_language">Wikipedia</a>
+    </div>
+</div>
+
+<!--
+- 50% of the websites are in English
 -->
 
 ---
