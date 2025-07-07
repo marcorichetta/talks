@@ -142,7 +142,7 @@ layout: section
 
 <div class="flex justify-center mb-4">
     <img src="/internet_users_2025.jpg" alt="Internet users by language" width="600">
-    <div class="absolute bottom-5 right-60 text-sm text-gray-500">
+    <div class="absolute bottom-5 right-60 text-gray-500">
         Source: <a href="https://en.wikipedia.org/wiki/Languages_used_on_the_Internet#Internet_users_by_language">Wikipedia</a>
     </div>
 </div>
@@ -239,13 +239,13 @@ transition: slide-up
 transition: slide-up
 ---
 
-# **2019**
+# May 2019
 - Marian Vignau 🇦🇷 assisted Pycon US
 - Finds out Raúl Cumplido 🇪🇸 was working on the Spanish translation.
 - Inspired by the 🇫🇷 translation
 
 <v-click>
-<h2>Standing on the shoulders of giants</h2>
+<h2>Community 🫶</h2>
 </v-click>
 
 <!--
@@ -260,7 +260,7 @@ I included the flags as a way of showing the importance of communities and why n
 transition: slide-up
 ---
 
-# **April 2020**
+# April 2020
 
 Vinicius Ferreira 🇧🇷 talked about the 🇵🇹 translation in Python Pizza Remote.
 
@@ -275,6 +275,7 @@ who were listening to do the same.
 
 ---
 transition: slide-up
+layout: center
 ---
 
 
@@ -323,66 +324,66 @@ image: https://i.giphy.com/h26R1JMxiqYpwp0rkF.webp
 -->
 
 ---
+transition: slide-up
+layout: center
+---
+
+<div class="flex justify-center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3JscnA4ZGJha3lpcGZkbnpub3ZoNWh5bXBxcnl3NHgxZGZ4MngwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aNqEFrYVnsS52/giphy.gif" alt="Cat gif" width="700">
+</div>
+
+<!--
+A month later
+- lots of messages on telegram
+- and lots of pull requests
+-->
+
+---
 transition: slide-left
 ---
 
 # **June 2020**
 
-`https://docs.python.org/es` was a reality! 🚀
+https://docs.python.org/es was a reality! 🚀
 
 <div class="flex justify-center">
   <img src="/docs-translation.png" alt="First screenshot of the translated docs" width="800">
 </div>
 
 <!--
-And a month later
-and a lot of messages on telegram
-
-#TODO Gif cat keyboard
-
-## We were part of the official docs
+## We were part of the official docs!
 -->
 
 ---
-layout: image
----
 
-# Some numbers
-
-- **+4300** commits
-- **350** files translated (> 75%)
-- **+300** contributors (and counting)
-
-![Opened issues and Pull Requests](/issues-PRs.png)
+<div class="grid grid-cols-[2fr_4fr] gap-4">
+    <div>
+        <h1>Some numbers</h1>
+        <div class="mt-4">
+                <p><strong>+4300</strong> commits</p>
+                <p><strong>350</strong> files translated (> 75%)</p>
+                <p><strong>+300</strong> contributors (and counting)</p>
+        </div>
+    </div>
+    <div class="flex items-center justify-center">
+        <img src="/contributors.png" alt="Contributors" width="100%" />
+    </div>
+</div>
 
 <!--
-Grab it while it's hot!
+These are some of the numbers so far.
 -->
 
 ---
 layout: section
 ---
 
-# What you can Do
-
----
-
-# Contributing to Python doesn’t have to be scary!
-
-![](/python-issues-github.png)
+# What you can do
 
 <!--
-#TODO Escribir lo que quiero decir
--->
+I talked about Why translate and shared our story.
 
----
-
-![](/python-docs-contributing.png)
-
-<!--
-Making this talk I discovered this page.
-
-While it's helpful, it can be daunting for people that want to get started.
+## What you can do?
 -->
 
 ---
@@ -393,40 +394,86 @@ While it's helpful, it can be daunting for people that want to get started.
 - Request a file to translate
 - Translate it on your computer
 - Commit, push and create the pull request
-- Wait for feedback
+- Wait for feedback from a reviewer
 - Success 🎉
 
-#TODO Incluir roles
+![](/issues-PRs.png)
+
+<!--
+Read process
+
+And, as you can see, there are many pages waiting to be translated
+-->
 
 ---
 
 # Ask for help 🫂
 
-
 ## Guide with the required step-by-step configuration:
 https://python-docs-es.readthedocs.io/es/3.13/CONTRIBUTING.html
+
 
 ## Telegram channel:
 https://t.me/python_docs_es
 
+<!--
+And don't forget you always can ask for help.
+-->
+
 ---
 
-# What About LLMs? 🤖
+# Contributing to Python doesn’t have to be scary!
 
-https://www.gally.net/temp/llms-and-translation/index.html
+![](/python-issues-github.png)
 
+<!--
+Usually this is what we imagine when we say "contribute to Python"
 
-#TODO Agregar antes una slide que diga EXTRA
+But it's not only way, in fact
+-->
 
-Hay un componente en lo artesanal que no queremos perder
+---
+
+# http://devguide.python.org/#contributing
+
+<div class="flex items-center justify-center">
+    <img src="/python-docs-contributing.png" alt="Contributing guide" width="100%" />
+</div>
+
+<Arrow x1="600" y1="340" x2="515" y2="340" color="red" v-click />
+
+<!--
+Making this talk I discovered this page.
+
+I think it's great because it shows many ways to contribute depending on the role you have.
+
+I noticed translating doesn't have a guide (yet)
+-->
+
+---
+layout: statement
+---
+
+# Extra
+
+---
+
+# A word about LLMs 🤖
+
+<v-clicks>
+
+- What role do LLMs play in this?
+- Will they replace us?
+
+<Youtube id="uNejkslYSP4" width="100%" height="300" />
+
+</v-clicks>
 
 <!--
 This shouldn't be a 2025 talk if there's no AI in it
 
-- What role do LLMs play in this? 
+- What role do LLMs play in this?
 - We cannot ignore that they're pretty useful in translation.
-
-- Professional translators know that AI will get better and better (99%), and that offers for that 1% you can provide will become scarce.
 -->
 
 ---
@@ -437,17 +484,24 @@ This shouldn't be a 2025 talk if there's no AI in it
 <v-clicks>
 
 - It’s not only translation; it's a great opportunity to **learn**
+
+- Getting started in  **Open Source**
+
 - It's a way of giving back to the **community**
-- **Get started in Open Source**
-- **Contribute to Python**
 
 </v-clicks>
 
 <!--
+- Translation is just a part of the process
+- it's an excellent opportunity to **Learn** (about Python and how to work in a group)
+
+- Getting started in Open Source
+
+- **Contribute to open source**: 
+
 - Do it for the **community**, you never know the people you get to know when helping others.
-- **Learn**: You will learn about Python and how to work collaboratively.
-- It’s not only translation; it's a great opportunity to get started on **open source**.
-- **Contribute to open source**: It's adding a tiny grain of sand to a collective effort that has been going on for years and will continue beyond us.
+
+But most importantly,
 -->
 
 ---
@@ -455,16 +509,14 @@ layout: intro-image
 image: https://live.staticflickr.com/65535/53938930235_3921adef78_3k.jpg
 ---
 
-<div class="absolute top-10 text-center text-3xl">
-  <h1>Be part of something bigger than you</h1>
+<div class="text-center bg-sky-600 bg-opacity-50 px-2 mx-8 rounded-lg">
+  <h1>Be part of something bigger</h1>
 </div>
 
 <!--
-But most importantly,
+It let's you be part of something bigger 
 
-to be part of something bigger than you
-
-Which will trascend us
+how the python community
 -->
 
 ---
@@ -482,12 +534,21 @@ If you wanna join us or just say hi.
 
 ---
 layout: intro-image-right
-# image: https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif
 image: /ciao-gif.webp
 ---
 
-# Thank You! 🙏
+# Thank You!
 
-@marcorichetta - EuroPython 2025
+![](/linkedin-qr.webp) 
 
-_Illustration by Matteo Giuseppe Pani_
+<div class="absolute bottom-10">
+  <span class="font-600">
+    How to Contribute to the Python Community in Your Own Language
+    <br>
+    @marcorichetta - EuroPython 2025
+  </span>
+</div>
+
+<div class="absolute right-40 bottom-10 text-gray-500">
+  Illustration by Matteo Giuseppe Pani
+</div>
