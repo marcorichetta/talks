@@ -58,19 +58,6 @@ image: /about.webp
 - Looking for a job right now: https://www.linkedin.com/in/marco-richetta/
 </v-clicks>
 
----
-layout: center
----
-
-# How many of you do not speak English natively? 🖐️
-
-<!--
-Just to check if you are awake
-How many...
-Could you raise your hand?
-
-Ok, I think this is gonna be more valuable to you.
--->
 
 ---
 
@@ -122,6 +109,20 @@ If at least one person feels inspired to contribute to the community, I will fee
 - First why I think it's important to translate the documentation.
 - Then share our experience with the Spanish translation: how we started, and what we have achieved
 - Finally, I will tell you what you can do to start contributing
+-->
+
+---
+layout: center
+---
+
+# How many of you do not speak English natively? 🖐️
+
+<!--
+Just to check if you are awake
+How many...
+Could you raise your hand?
+
+Ok, I think you will empathize more with some slides
 -->
 
 ---
