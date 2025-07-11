@@ -149,7 +149,8 @@ layout: section
 </div>
 
 <!--
-- 75% **don't speak English** as their first language
+- It turns out 75% of the internet users **don't speak English** as their first language
+- (Optional) As we saw when raising hands
 -->
 
 ---
@@ -186,7 +187,7 @@ It grabs your attention immediately.
 
 ---
 
-# Other reasons
+# Useful for
 
 <v-clicks>
 
@@ -198,14 +199,14 @@ It grabs your attention immediately.
 </v-clicks>
 
 <!--
-This is also important because of other reasons:
+This is also useful because of other reasons:
 
 <v-clicks>
 
-- **New Python Users**: The tutorials provide a structured path to learn Python.
-- **Educators and Newcomers**: Programming is being taught at an increasingly younger age. Being able to teach Python to young people in their native language is a big plus.
-- **Contributing to Open Source**: This is not directly on translation, but it's a great way to get started in open source.
-- **Other Contributors**: I took a lot of inspiration from the 🇵🇹 translation to find more apropiate terms
+- **New Python Users**: can benefit from an official structured path to learn Python.
+- **Educators and Newcomers**: Programming is being taught at younger ages. Being able to teach it to young people in their native language is a big plus.
+- **Contributing to Open Source**:  It's a great way to get started in open source.
+- **Other Contributors**: I took a lot of inspiration from the 🇵🇹 translation when helping on the 🇪🇸 one
 </v-clicks>
 -->
 
@@ -231,7 +232,7 @@ transition: slide-up
 
 <!--
 - the official docs didn't offer a Spanish option
-- This is a snapshot of it in December 2019.
+- This is a snapshot of it in December 2019 (Thanks Wayback Machine, amazing piece of software)
 - People who didn't have good English had to rely on translation services or community content
 - Which are fine most of the time, but not always specially for reference material
 -->
@@ -290,15 +291,16 @@ transition: slide-up
 
 <div class="flex justify-center">
   <img src="/collaboration.png" alt="Discourse collaboration" width="800">
+  <p class="text-center text-gray-500">Marian telling about the work they were doing with Raul, in the Python Argentina forum</p>
 </div>
 
 <!--
 and made interested people find each other and join efforts.
 
+This is Marian telling about the work they were doing with Raul, in the Python Argentina forum
 
-This is Marian telling about the work they were doing with Raul.
 
-In the Python Argentina forum
+Which gathered us in a Telegram group
 -->
 
 ---
@@ -464,7 +466,7 @@ layout: statement
 <v-clicks>
 
 - What role do LLMs play in this?
-- Will they replace us?
+- Will they replace us in translation?
 
 <Youtube id="uNejkslYSP4" width="100%" height="300" />
 
@@ -475,6 +477,8 @@ This shouldn't be a 2025 talk if there's no AI in it
 
 - What role do LLMs play in this?
 - We cannot ignore that they're pretty useful in translation.
+
+#TODO Ver que joraca decir acá
 -->
 
 ---
@@ -489,6 +493,8 @@ This shouldn't be a 2025 talk if there's no AI in it
 - Getting started in  **Open Source**
 
 - It's a way of giving back to the **community**
+
+<Youtube id="g74B0RW2q-0" />
 
 </v-clicks>
 
