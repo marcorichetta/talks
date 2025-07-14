@@ -55,21 +55,34 @@ image: /about.webp
 - Living in Copenhagen 🇩🇰
 - Making the world a better place™ with software since ~2016
 - I like to play bass and I'm a dog owner (I miss you so much Lola 🐶)
-- Looking for a job right now: https://www.linkedin.com/in/marco-richetta/
 </v-clicks>
 
 
 ---
+layout: two-cols
+---
+
+# Agenda
+
+<div v-click>
+
+- Why translate?
+- Py-Docs-ES story 🇪🇸
+- What you can do?
+
+</div>
+
+::right::
 
 # Goals
 
-<v-clicks>
+<div v-click>
 
 - Make you aware of the **importance of translation**.
-- Inspire you to **contribute to existing initiatives** (🇵🇹 🇵🇱 🇹🇷 🇰🇷).
+- Inspire you to **contribute to existing initiatives** (🇵🇹 🇵🇱 🇹🇷 🇰🇷 + 8).
 - Promote it in **your own language**!
 
-</v-clicks>
+</div>
 
 <div
   v-motion v-click
@@ -82,33 +95,19 @@ image: /about.webp
 </div>
 
 <!--
-I have **three goals** for this talk
-
-// 3 clicks
-
-[click] Czech anyone?
-
-If at least one person feels inspired to contribute to the community, I will feel accomplished!
--->
-
----
-
-# Agenda
-
-<v-clicks>
-
-- Why translate?
-- Py-Docs-ES story 🇪🇸
-- What you can do
-
-</v-clicks>
-
-<!--
+[click] ### Agenda
 - I’m here to tell you about our journey with the Python translation to Spanish.
 - And for that, the agenda will cover
 - First why I think it's important to translate the documentation.
 - Then share our experience with the Spanish translation: how we started, and what we have achieved
 - Finally, I will tell you what you can do to start contributing
+
+[click] ### Goals
+
+As for the goals, I have **3** for this talk
+
+[click] Czech anyone?
+If at least one person feels inspired to contribute, I will feel accomplished 😁
 -->
 
 ---
@@ -119,10 +118,12 @@ layout: center
 
 <!--
 Just to check if you are awake
-How many...
+
+How many of you don not speak English natively?
+
 Could you raise your hand?
 
-Ok, I think you will empathize more with some slides
+Optional: Ok, nice distribution
 -->
 
 ---
@@ -169,10 +170,23 @@ layout: section
 -->
 
 ---
+layout: statement
+---
+
+# There is a need for translation
+
+<!--     
+- Documentation is crucial for the development and growth of any project.
+- I mean, we work in i18n because of our users.
+- Why not do it for Python itself?
+-->
+
+
+---
 layout: quote
 ---
 
-# "Having the docs in our language means people can feel like home 🏡"
+# "_Having the docs in our language means people can feel like home_" 🏡
 Cristián Maureira
 
 <!--
@@ -191,10 +205,10 @@ It grabs your attention immediately.
 
 <v-clicks>
 
-- **New Users**
-- **Educators and Newcomers**
-- **Getting started in open source**
-- **Other Contributors**
+- **New Users** -> official content to learn Python
+- **Educators and Newcomers** -> teaching programming in native language
+- **Getting started in open source** -> first contribution experience
+- **Other Contributors** -> inspiration from other translations
 
 </v-clicks>
 
@@ -247,7 +261,15 @@ transition: slide-up
 - Inspired by the 🇫🇷 translation
 
 <v-click>
-<h2>Community 🫶</h2>
+<div
+    v-motion
+    :initial="{ opacity: 0, scale: 0.8 }"
+    :enter="{ opacity: 1, scale: 1, transition: { duration: 1000 } }"
+>
+    <h1 class="text-center p-10">
+        Community 🫶
+    </h1>
+</div>
 </v-click>
 
 <!--
@@ -264,7 +286,13 @@ transition: slide-up
 
 # April 2020
 
-Vinicius Ferreira 🇧🇷 talked about the 🇵🇹 translation in Python Pizza Remote.
+
+<div class="flex justify-center items-center">
+    <img src="/Vinicius.png" alt="Vinicius Ferreira" class="absolute top-50 border-1 rounded-lg">
+    <div class="absolute bottom-25 text-gray-500">
+        Vinicius Ferreira 🇧🇷 talked about the 🇵🇹 translation in Python Pizza Remote.
+    </div>
+</div>
 
 <!--
 Then Vinicius Ferreira 🇧🇷
@@ -272,7 +300,6 @@ Then Vinicius Ferreira 🇧🇷
 Which led to other spanish speakers 
 who were listening to do the same.
 
-#TODO Agregar contenido
 -->
 
 ---
@@ -290,17 +317,16 @@ transition: slide-up
 ---
 
 <div class="flex justify-center">
-  <img src="/collaboration.png" alt="Discourse collaboration" width="800">
-  <p class="text-center text-gray-500">Marian telling about the work they were doing with Raul, in the Python Argentina forum</p>
+  <img src="/collaboration.png" alt="Discourse collaboration" width="800" border="1">
 </div>
+<div class="text-center text-gray-500">Marian telling about the work they were doing with Raúl, in the Python 🇦🇷 forum</div>
 
 <!--
 and made interested people find each other and join efforts.
 
-This is Marian telling about the work they were doing with Raul, in the Python Argentina forum
+This is Marian telling about the work they were doing with Raúl, in the Python Argentina forum
 
-
-Which gathered us in a Telegram group
+A month later, we had a group of people interested in translating the docs to Spanish.
 -->
 
 ---
@@ -313,9 +339,9 @@ image: https://i.giphy.com/h26R1JMxiqYpwp0rkF.webp
 
 <v-clicks depth="2">
 
+- First meeting! 🎉
 - COVID was making people do all kinds of weird things
 - some of us decided to translate the Python docs to Spanish (which is not a weird thing)
-- First meeting! 🎉
 
 </v-clicks>
 
@@ -365,7 +391,7 @@ https://docs.python.org/es was a reality! 🚀
         <div class="mt-4">
                 <p><strong>+4300</strong> commits</p>
                 <p><strong>350</strong> files translated (> 75%)</p>
-                <p><strong>+300</strong> contributors (and counting)</p>
+                <p><strong>+250</strong> contributors (and counting)</p>
         </div>
     </div>
     <div class="flex items-center justify-center">
@@ -381,12 +407,41 @@ These are some of the numbers so far.
 layout: section
 ---
 
-# What you can do
+# What can you do?
 
 <!--
 I talked about Why translate and shared our story.
 
-## What you can do?
+but What can you do?
+-->
+
+---
+layout: two-cols
+---
+
+# Ask for help 🫂
+<br>
+
+## Guide 
+https://python-docs-es.readthedocs.io/es/3.13/CONTRIBUTING.html
+
+
+## Telegram channel:
+https://t.me/python_docs_es
+
+::right::
+
+<div class="flex justify-center">
+    <img src="/qr_telegram.jpg" alt="Telegram QR code">
+</div>
+
+<!--
+First of all, don't forget you always can ask for help on how to get started
+or just to say hi!
+
+We have a guide with the required step-by-step configuration to get started
+
+
 -->
 
 ---
@@ -406,21 +461,6 @@ I talked about Why translate and shared our story.
 Read process
 
 And, as you can see, there are many pages waiting to be translated
--->
-
----
-
-# Ask for help 🫂
-
-## Guide with the required step-by-step configuration:
-https://python-docs-es.readthedocs.io/es/3.13/CONTRIBUTING.html
-
-
-## Telegram channel:
-https://t.me/python_docs_es
-
-<!--
-And don't forget you always can ask for help.
 -->
 
 ---
@@ -450,7 +490,9 @@ Making this talk I discovered this page.
 
 I think it's great because it shows many ways to contribute depending on the role you have.
 
-I noticed translating doesn't have a guide (yet)
+[click] I noticed translating doesn't have a guide (yet)
+
+Nice opportuni
 -->
 
 ---
@@ -468,17 +510,42 @@ layout: statement
 - What role do LLMs play in this?
 - Will they replace us in translation?
 
-<Youtube id="uNejkslYSP4" width="100%" height="300" />
-
 </v-clicks>
 
-<!--
-This shouldn't be a 2025 talk if there's no AI in it
+<!-- 
+This wouldn't be a 2025 talk if there's no AI in it
+
+**You may ask**
 
 - What role do LLMs play in this?
 - We cannot ignore that they're pretty useful in translation.
 
-#TODO Ver que joraca decir acá
+In fact, GPT-1, the ancestor of Chatgpt, did a very good job at it.
+
+but
+-->
+
+---
+zoom: 0.8
+---
+
+<div class="grid grid-cols-2 gap-4">
+    <div>
+        <h1>"Craftsmanship as resistance to performance"</h1>
+    </div>
+    <div class="flex justify-center items-center">
+        <img src="/burnout.jpg" alt="The burnout society" width="80%">
+    </div>
+</div>
+
+
+<!--
+I'm bringing up Byung Chul Han, philosopher, who in his book, Burnout Society, talks about
+
+craftsmanship as resistance to performance, where everything must be fast, useful, and quantifiable.
+
+
+Whether you agree with this opinion or not,
 -->
 
 ---
@@ -494,8 +561,6 @@ This shouldn't be a 2025 talk if there's no AI in it
 
 - It's a way of giving back to the **community**
 
-<Youtube id="g74B0RW2q-0" />
-
 </v-clicks>
 
 <!--
@@ -504,11 +569,10 @@ This shouldn't be a 2025 talk if there's no AI in it
 
 - Getting started in Open Source
 
-- **Contribute to open source**: 
+- Giving back to the **community**,
+  - you never know the people you get to know when helping others.
 
-- Do it for the **community**, you never know the people you get to know when helping others.
-
-But most importantly,
+And most importantly,
 -->
 
 ---
@@ -527,35 +591,30 @@ how the python community
 -->
 
 ---
-layout: image-right
-image: /qr_telegram.jpg
----
-
-# Join us
-
-## https://t.me/python_docs_es
-
-<!--
-If you wanna join us or just say hi.
--->
-
----
-layout: intro-image-right
-image: /ciao-gif.webp
+layout: two-cols
 ---
 
 # Thank You!
 
-![](/linkedin-qr.webp) 
+<div class="flex justify-center">
+    <img src="/ciao-gif.webp" alt="Ciao animation" class="h-64 my-auto">
+</div>
+
+<div class="absolute left-33 bottom-40 text-gray-500">
+    Illustration by Matteo Giuseppe Pani
+</div>
 
 <div class="absolute bottom-10">
-  <span class="font-600">
-    How to Contribute to the Python Community in Your Own Language
-    <br>
-    @marcorichetta - EuroPython 2025
-  </span>
+    <span class="font-600">
+        How to Contribute to the Python Community in Your Own Language
+        <br>
+        @marcorichetta - EuroPython 2025
+    </span>
 </div>
 
-<div class="absolute right-40 bottom-10 text-gray-500">
-  Illustration by Matteo Giuseppe Pani
-</div>
+::right::
+
+# Let's connect!
+
+Currently job-hunting, so if you know of any opportunities, please let me know!
+<img src="/linkedin-qr.webp" alt="LinkedIn QR code" class="w-64">
