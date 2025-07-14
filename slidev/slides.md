@@ -45,17 +45,17 @@ Thanks to EuroPython organizers and volunteers for their help. It’s my first t
 ---
 layout: image-right
 image: /about.webp
+zoom: 1.1
 ---
 
 # About Me
 
-<v-clicks>
 
 - Córdoba 🇦🇷 
 - Living in Copenhagen 🇩🇰
 - Making the world a better place™ with software since ~2016
 - I like to play bass and I'm a dog owner (I miss you so much Lola 🐶)
-</v-clicks>
+
 
 
 ---
@@ -600,7 +600,7 @@ layout: two-cols
     <img src="/ciao-gif.webp" alt="Ciao animation" class="h-64 my-auto">
 </div>
 
-<div class="absolute left-33 bottom-40 text-gray-500">
+<div class="absolute left-33 bottom-40 text-gray-400">
     Illustration by Matteo Giuseppe Pani
 </div>
 
@@ -616,5 +616,5 @@ layout: two-cols
 
 # Let's connect!
 
-Currently job-hunting, so if you know of any opportunities, please let me know!
-<img src="/linkedin-qr.webp" alt="LinkedIn QR code" class="w-64">
+Currently looking for a job
+<img src="/linkedin-qr.webp" alt="LinkedIn QR code" class="w-80">
