@@ -96,7 +96,7 @@ layout: two-cols
 <div
   v-motion v-click
   :initial="{ x: -30 }"
-  :enter="{ x: 285, y: -45 }"
+  :enter="{ x: 325, y: -48 }"
   :click="{ x: 30 }"
   :leave="{ x: 1000 }"
 >
@@ -348,9 +348,9 @@ image: https://i.giphy.com/h26R1JMxiqYpwp0rkF.webp
 
 <v-clicks depth="2">
 
-- First meeting! 🎉
 - COVID was making people do all kinds of weird things
 - some of us decided to translate the Python docs to Spanish (which is not a weird thing)
+- First meeting! 🎉
 
 </v-clicks>
 
@@ -431,7 +431,7 @@ layout: two-cols
 # Ask for help 🫂
 <br>
 
-## Guide 
+## ContributGuide 
 https://python-docs-es.readthedocs.io/es/3.13/CONTRIBUTING.html
 
 
@@ -449,10 +449,10 @@ First of all, don't forget you always can ask for help on how to get started
 or just to say hi!
 
 We have a guide with the required step-by-step configuration to get started
-
-
 -->
 
+---
+layout: two-cols
 ---
 
 # Our Process
@@ -464,12 +464,16 @@ We have a guide with the required step-by-step configuration to get started
 - Wait for feedback from a reviewer
 - Success 🎉
 
-![](/issues-PRs.png)
+::right::
+
+<div class="flex justify-center" v-click>
+    <img src="/issues-PRs.png" alt="Translation process" width="100%">
+</div>
 
 <!--
-Read process
+1. Leer el process
 
-And, as you can see, there are many pages waiting to be translated
+[click] And, as you can see, there are many pages waiting to be translated
 -->
 
 ---
@@ -501,7 +505,7 @@ I think it's great because it shows many ways to contribute depending on the rol
 
 [click] I noticed translating doesn't have a guide (yet)
 
-Nice opportuni
+Another nice opportunity to standardize this process across communities
 -->
 
 ---

@@ -1,0 +1,7 @@
+.slidev-layout {
+
+    ul>li {
+        font-size: 1.25rem;
+        /* Increase as needed */
+    }
+}
