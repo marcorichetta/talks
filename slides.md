@@ -16,7 +16,8 @@ fonts:
 
 favicon: /favicon.ico
 author: Marco Richetta
-record: true
+record: dev
+download: true
 drawings:
     presenterOnly: true
 
@@ -56,6 +57,14 @@ zoom: 1.1
 - Making the world a better place™ with software since ~2016
 - I like to play bass and I'm a dog owner (I miss you so much Lola 🐶)
 
+
+---
+
+# Slides
+
+<img src="/github-qr.webp" alt="Github QR code" class="w-80">
+
+## https://marcorichetta.github.io/talks/1
 
 
 ---

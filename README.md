@@ -1,11 +1,6 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Talks
 
-To start the slide show:
+Repo con el contenido de mis charlas
+Uso [Slidev](https://sli.dev/) para crear las presentaciones.
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
+- EuroPython 2025 - [How to Contribute to the Python Community in Your Own Language](https://marcorichetta.github.io/talks/1)
