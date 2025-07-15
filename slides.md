@@ -17,7 +17,6 @@ fonts:
 favicon: /favicon.ico
 author: Marco Richetta
 record: dev
-download: true
 drawings:
     presenterOnly: true
 
