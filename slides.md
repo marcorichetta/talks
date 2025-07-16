@@ -27,9 +27,9 @@ defaults:
 
 # How to Contribute to the Python Community in Your Own Language
 
-#### Translating Python Documentation to 🇪🇸: Experiences and Learnings
+#### Translating Python Documentation to 🇪🇸 Experiences and Learnings
 
-<div class="absolute bottom-10">
+<div class="absolute bottom-5">
   <span class="font-600">
     @marcorichetta - EuroPython 2025
   </span>
@@ -562,34 +562,34 @@ Whether you agree with this opinion or not,
 
 ---
 
-# Closing Thoughts
+# Closing thoughts
 
+- Translation is just the outcome, but there is also learning <span v-ckick v-mark="{ color: 'red', type: 'underline' }">**in the process**</span>
 
 <v-clicks>
 
-- It’s not only translation; it's a great opportunity to **learn**
-
-- Getting started in  **Open Source**
+- Great opportunity to get started with **Open Source**
 
 - It's a way of giving back to the **community**
 
 </v-clicks>
 
 <!--
-- Translation is just a part of the process
-- it's an excellent opportunity to **Learn** (about Python and how to work in a group)
+[click] - Translation is just the outcome, but you get to learn in process
+- whether is about Python, another language or how to work in a group
 
-- Getting started in Open Source
+[click] - Getting started in Open Source
 
-- Giving back to the **community**,
-  - you never know the people you get to know when helping others.
+[click] - Giving back to the **community**,
+ - we always need more people contributing
+ - you never know the people you get to know when helping others.
 
 And most importantly,
 -->
 
 ---
 layout: intro-image
-image: https://live.staticflickr.com/65535/53938930235_3921adef78_3k.jpg
+image: something_bigger.jpg
 ---
 
 <div class="text-center bg-sky-600 bg-opacity-50 px-2 mx-8 rounded-lg">
@@ -616,7 +616,7 @@ layout: two-cols
     Illustration by Matteo Giuseppe Pani
 </div>
 
-<div class="absolute bottom-10">
+<div class="absolute bottom-5">
     <span class="font-600">
         How to Contribute to the Python Community in Your Own Language
         <br>
@@ -628,5 +628,5 @@ layout: two-cols
 
 # Let's connect!
 
-Currently looking for a job
+Help me get a job (?)
 <img src="/linkedin-qr.webp" alt="LinkedIn QR code" class="w-80">
