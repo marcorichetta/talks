@@ -45,15 +45,16 @@ Thanks to EuroPython organizers and volunteers for their help. It’s my first t
 ---
 layout: image-right
 image: /about.webp
-zoom: 1.1
+# zoom: 1.1
 ---
 
 # About Me
 
 
-- Córdoba 🇦🇷 
+- I'm from Córdoba 🇦🇷 
 - Living in Copenhagen 🇩🇰
 - Making the world a better place™ with software since ~2016
+- Mostly Backend - DevOps - Whatever it's needed
 - I like to play bass and I'm a dog owner (I miss you so much Lola 🐶)
 
 
@@ -119,22 +120,6 @@ If at least one person feels inspired to contribute, I will feel accomplished �
 -->
 
 ---
-layout: center
----
-
-# How many of you do not speak English natively? 🖐️
-
-<!--
-Just to check if you are awake
-
-How many of you don not speak English natively?
-
-Could you raise your hand?
-
-Optional: Ok, nice distribution
--->
-
----
 layout: section
 ---
 
@@ -144,6 +129,22 @@ layout: section
 - Documentation is crucial for the development and growth of any project.
 - I mean, we work in i18n because of our users.
 - Why not do it for Python itself?
+-->
+
+---
+layout: center
+---
+
+# How many of you do not speak English natively? 🖐️
+
+<!--
+Just to check if you are awake after lunch
+
+How many of you don not speak English natively?
+
+Could you raise your hand?
+
+Optional: Ok, nice distribution
 -->
 
 ---
